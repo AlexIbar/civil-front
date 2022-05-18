@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app color="grey darken-3" dark class="px-4" height="85px">
       <div class="d-flex align-center">
-        <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="./imagenes/logo.png" transition="scale-transition"
+        <v-img alt="Vuetify Logo" class="shrink mr-2" contain :src="logo" transition="scale-transition"
           width="80" />
       </div>
       <v-container>
@@ -34,17 +34,21 @@
           active-class="deep-purple--text text--accent-4"
         >
           <v-list-item>
-            <v-list-item-icon>
+            <router-link to="/" class-active="" class="d-flex links" exact>
+              <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Home</v-list-item-title>
+            </router-link>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
+            <router-link to="/reservar" class="d-flex links" exact>
+              <v-list-item-icon>
+              <v-icon>mdi-airplane</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Account</v-list-item-title>
+            <v-list-item-title>Reservar</v-list-item-title>
+            </router-link>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -55,12 +59,25 @@
     </v-main>
   </v-app>
 </template>
-
+<style>
+nav li:hover,
+nav li:active {
+  background-color: indianred;
+  cursor: pointer;
+}
+.links{
+  text-decoration: none;
+}
+</style>
 <script>
 
 export default {
   comments: {
-
+    data(){
+      return {
+        imagen:'./imagenes/logo.png'
+      }
+    }
   },
   name: 'App',
 
