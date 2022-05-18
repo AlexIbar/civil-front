@@ -14,6 +14,16 @@ const routes = [
     path: '/reservar',
     name: 'Reservar',
     component: () => import(/* webpackChunkName: "about" */ '../views/ReservarVuelo.vue')
+  },
+  {
+    path: '/inicioSesion',
+    name: 'InicioSesion',
+    component: () => import(/* webpackChunkName: "about" */ '../views/InicioSesion.vue')
+  },
+  {
+    path: '/crearUsuario',
+    name: 'CrearUsuario',
+    component: () => import(/* webpackChunkName: "about" */ '../views/CrearUsuario.vue')
   }
 ]
 

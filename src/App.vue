@@ -12,8 +12,8 @@
       </v-container>
       <v-spacer></v-spacer>
 
-      <v-btn :loading="loading3" :disabled="loading3" color="blue darken-3" class="ma-2 white--text"
-        @click="loader = 'loading3'" height="45px">
+      <v-btn @click="cambioUrl" color="blue darken-3" class="ma-2 white--text"
+        height="45px">
         Ingresar
         <v-icon right dark>
           mdi-account-arrow-right-outline
@@ -57,8 +57,30 @@
     <v-main>
       <router-view />
     </v-main>
+    <footer-app class="mt-6"></footer-app>
   </v-app>
 </template>
+<script>
+  import FooterApp from './components/FooterApp.vue'
+
+export default {
+    components:{
+      FooterApp
+    },
+  name: 'App',
+
+  data: () => ({
+    drawer: false,
+    group: null,
+    logo:'./imagenes/logo.png'
+  }),
+  methods: {
+    cambioUrl(){
+      location.href='/#/inicioSesion'
+    }
+  },
+};
+</script>
 <style>
 nav li:hover,
 nav li:active {
@@ -69,21 +91,3 @@ nav li:active {
   text-decoration: none;
 }
 </style>
-<script>
-
-export default {
-  comments: {
-    data(){
-      return {
-        imagen:'./imagenes/logo.png'
-      }
-    }
-  },
-  name: 'App',
-
-  data: () => ({
-    drawer: false,
-    group: null,
-  }),
-};
-</script>
