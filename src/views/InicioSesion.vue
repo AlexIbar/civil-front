@@ -5,17 +5,19 @@
                 <inicio-sesion-uno></inicio-sesion-uno>
             </v-col>
             <v-col md="6">
-                <inicio-sesion-uno></inicio-sesion-uno>
+                <crear-admin></crear-admin>
             </v-col>
         </v-row>
     </v-container>
 </template>
 <script>
 import InicioSesionUno from '../components/InicioSesionUno'
+import CrearAdmin from '../components/CrearAdmin.vue'
 export default {
     name: 'InicioSesion',
     components:{
-        InicioSesionUno
+        InicioSesionUno,
+        CrearAdmin
     },
     data() {
         return {

@@ -24,7 +24,12 @@ const routes = [
     path: '/crearUsuario',
     name: 'CrearUsuario',
     component: () => import(/* webpackChunkName: "about" */ '../views/CrearUsuario.vue')
-  }
+  },
+  {
+    path: '/vuelosDisp',
+    name: 'VuelosDisp',
+    component: () => import(/* webpackChunkName: "about" */ '../views/VuelosDisp.vue')
+  },
 ]
 
 const router = new VueRouter({

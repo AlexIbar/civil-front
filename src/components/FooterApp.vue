@@ -22,7 +22,8 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      Ofrecemos un servicio personalizado de calidad y confiabilidad, a través de la buena atención de nuestro personal capacitado. Diseñamos viajes únicos a precios accesibles, logrando superar las expectativas de nuestros clientes.
+       Somos FlyLG ¡Poniendo alas a tus sueños!
       </v-card-text>
 
       <v-divider></v-divider>
